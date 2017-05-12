@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Combo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+            font-family: 'Combo' sans-serif;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+        .ui {
+            display: block;
+            position: fixed;
+            z-index: 999999999;
+            z-index: 999999999999999999;
+            bottom: 2px;
+            right: 2px;
+            text-align: center;
+            border: 1px solid #777;
+            padding: 3px;
+            background-color: #fff;
+            border-radius: 2px;
+            color: #222;
+        }
+
+        .ui>textarea {
+            border: 1px solid #fff !important;
+            outline: none !important;
+        }
+
+        textarea,
+        code {
+            font-family: monospace;
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            background-color: #fff;
+        }
+
+        body>div {
+            transition: all 1s ease-in-out 0s;
+            -webkit-transition: all 1s ease-in-out 0s;
+            -moz-transition: all 1s ease-in-out 0s;
+            max-width: 250px !important;
+            max-height: 250px !important;
+        }
+
+        .default {
+            width: 50px;
+            height: 50px;
+            float: left;
+            border: 1px dashed #888;
+            padding: 5px;
+            margin: 1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="ui">
+      <code>you{</code>
+      <textarea rows="12" cols="28" autofocus="true"></textarea>
+      <code> } </code>
+    </span>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
